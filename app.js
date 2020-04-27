@@ -12,5 +12,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/admin', adminRoutes);
 
 mongoConnect(client => {
-  app.listen(3000);
+  app.listen(80);
 })
