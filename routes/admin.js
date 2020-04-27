@@ -10,6 +10,6 @@ const router = express.Router();
 // router.get('/add-product', adminController.getAddProduct);
 
 // /admin/add-product => POST
-router.post('/add-product', adminController.postAddProduct);
+router.post('/add-message', adminController.postAddMessage);
 
 module.exports = router;

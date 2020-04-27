@@ -9,7 +9,7 @@ const adminRoutes = require('./routes/admin');
 const PORT= process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/admin', adminRoutes);
+app.use(adminRoutes);
 
 mongoConnect(client => {
   app.listen(PORT);
